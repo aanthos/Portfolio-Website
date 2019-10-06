@@ -9,6 +9,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
+// TODO: Figure out if components and props can go in
+// https://github.com/vuejs/vue-class-component/blob/master/example/src/App.vue
 @Component({
   components: {
     HelloWorld,
