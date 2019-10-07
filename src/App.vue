@@ -26,6 +26,11 @@
   text-align: center;
   color: #2c3e50;
 }
+
+// COLORS TO CONSIDER:
+// 0061b5
+// b54200
+
 // #nav {
 //   padding: 30px;
 //   a {
@@ -51,6 +56,7 @@
 .nav-item {
   a {
     padding: 8px 16px;
+    display: inline;
     &:hover {
       color: orange;
       text-decoration: none;
