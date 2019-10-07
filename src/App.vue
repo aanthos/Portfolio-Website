@@ -26,19 +26,23 @@
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+// #nav {
+//   padding: 30px;
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
 
 #navbar {
-  opacity: 0.9;
+  opacity: 0.5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   a {
     color: white;
   }
