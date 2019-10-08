@@ -57,7 +57,7 @@
     cursor: pointer;
     margin-bottom: 20px;
     transition-duration: 0.5s; 
-    color: #e8650e;
+    color: #3d856f;
   }
 }
 
