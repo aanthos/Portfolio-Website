@@ -5,6 +5,7 @@
     <Banner />
     <About />
     <Portfolio />
+    <Contact />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import Banner from '@/components/Banner.vue'; // @ is an alias to /src
 import About from '@/components/About.vue';
 import Portfolio from '@/components/Portfolio.vue';
+import Contact from '@/components/Contact.vue';
 
 // TODO: Figure out if components and props can go in
 // https://github.com/vuejs/vue-class-component/blob/master/example/src/App.vue
@@ -22,6 +24,7 @@ import Portfolio from '@/components/Portfolio.vue';
     Banner,
     About,
     Portfolio,
+    Contact,
   },
 })
 export default class Home extends Vue {}
