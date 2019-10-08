@@ -1,6 +1,12 @@
 <template>
     <div id="banner">
-        <img id="banner-image" src="../assets/sand-dunes-2.jpg">
+        <img id="banner-image" src="../assets/sand-dunes.jpg">
+        <div id="profile-container">
+			<img id="profile-image" src="../assets/profile-shot.png">
+			<br>
+			<h1>Antonio Maldonado</h1>
+			<h3>Aspiring Software Engineer</h3>
+        </div>
         <div id="arrow-container">
             <v-icon id="arrow" name="angle-down" />
         </div>
@@ -59,5 +65,20 @@
   width: 60px;
   height: 60px;
 }
+
+@profile-container-width: 400px;
+#profile-container {
+	width: @profile-container-width;
+	position: absolute;
+	color: white;
+	left: 50%;
+	margin-left: calc((@profile-container-width / 2) - @profile-container-width);
+	top: 50%;
+	margin-top: calc((@profile-container-width / 2) - @profile-container-width);
+}
+
+// #profile-image {
+// 	border: 
+// }
 
 </style>
