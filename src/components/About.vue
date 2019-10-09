@@ -14,11 +14,19 @@
     </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+
+});
+</script>
+
 <style lang="less" scoped>
 #about {
     max-width: 1140px;
     margin: auto;
     padding-bottom: 40px;
+    // transition: transform 0.6s ease-in-out;
 }
 
 #about-heading {

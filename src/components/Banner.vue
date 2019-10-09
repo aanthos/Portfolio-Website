@@ -1,17 +1,35 @@
 <template>
-    <div id="banner">
-        <img id="banner-image" src="../assets/sand-dunes.jpg">
-        <div id="profile-container">
+  <div id="banner">
+    <img id="banner-image" src="../assets/sand-dunes.jpg">
+   	<div id="profile-container">
 			<img id="profile-image" src="../assets/profile-shot.png">
 			<br>
 			<h1>Antonio Maldonado</h1>
 			<h3>Aspiring Software Engineer</h3>
-        </div>
-        <div id="arrow-container">
-            <v-icon id="arrow" name="angle-down" />
-        </div>
-    </div>
+  	</div>
+    
+    <a id="arrow-container" onclick="scrollToAbout(this)">
+     	<v-icon id="arrow" name="angle-down" />
+    </a>
+  </div>
 </template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+export default class Home extends Vue {
+  // TODO: Fix smooth scroll
+	public scrollToAbout(element: any) {
+		const point = document.querySelector('#banner');
+		if ( point ) {
+			point.scrollIntoView({
+				behavior: 'smooth',
+			});
+		}
+	}
+}
+
+</script>
 
 <style lang="less" scoped>
 #banner {
@@ -59,6 +77,9 @@
     transition-duration: 0.5s; 
     color: #3d856f;
   }
+  // &:target ~ #about{
+  //   transform: translateY(0px);
+  // }
 }
 
 #arrow {
@@ -77,8 +98,9 @@
 	margin-top: calc((@profile-container-width / 2) - @profile-container-width);
 }
 
-// #profile-image {
-// 	border: 
-// }
+#profile-image {
+  border: 4px solid #3d856f;
+  border-radius: 500px;
+}
 
 </style>

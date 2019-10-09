@@ -20,12 +20,12 @@ import Contact from '@/components/Contact.vue';
 // TODO: Figure out if components and props can go in
 // https://github.com/vuejs/vue-class-component/blob/master/example/src/App.vue
 @Component({
-  components: {
-    Banner,
-    About,
-    Portfolio,
-    Contact,
-  },
+	components: {
+		Banner,
+		About,
+		Portfolio,
+		Contact,
+	},
 })
 export default class Home extends Vue {}
 </script>
