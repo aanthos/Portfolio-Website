@@ -10,22 +10,55 @@
             knowledge and skills in the computer software industry.
         </p>
 
-        <button>Resume/CV</button>
+        <div id="resume-btn">
+            <a><v-icon id="resume-icon" name="file-pdf" /> Resume/CV</a>
+        </div>
     </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+
+});
+</script>
 
 <style lang="less" scoped>
 #about {
     max-width: 1140px;
     margin: auto;
     padding-bottom: 40px;
+    // transition: transform 0.6s ease-in-out;
 }
 
 #about-heading {
-    padding: 30px;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
 }
 
 .about-summary {
     margin: auto;
+    padding-bottom: 20px;
 }
+
+#resume-btn {
+    margin: auto;
+    max-width: 180px;
+    border: 2px solid #b54200;
+    border-radius: 7px;
+    padding: 20px;
+    color: #b54200;
+    font-size: 19px;
+    &:hover {
+        background-color: #b54200;
+        color: white;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    #resume-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 </style>
