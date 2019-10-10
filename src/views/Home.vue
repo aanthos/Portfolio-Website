@@ -2,7 +2,7 @@
   <div class="home">
     <NavBar v-if="!loading" />
     <Banner />
-    <About />
+    <Intro />
     <Portfolio />
     <Contact />
   </div>
@@ -12,26 +12,26 @@
 
 import NavBar from '@/components/NavBar.vue';
 import Banner from '@/components/Banner.vue'; // @ is an alias to /src
-import About from '@/components/About.vue';
+import Intro from '@/components/Intro.vue';
 import Portfolio from '@/components/Portfolio.vue';
 import Contact from '@/components/Contact.vue';
 
 import Vue from 'vue';
 export default Vue.extend({
   components: {
-    NavBar,
+		NavBar,
 		Banner,
-		About,
+		Intro,
 		Portfolio,
 		Contact,
   },
   data() {
-    return {
-      loading: true,
-    }
+		return {
+			loading: true,
+		};
   },
   mounted() {
-    setTimeout(() => { this.loading = false; }, 1000);
-  }
+		setTimeout(() => { this.loading = false; }, 600);
+  },
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
-    <div id="about">
-        <h1 id="about-heading">ABOUT ME</h1>
-        <p class="about-summary"> 
+    <div id="intro">
+        <h1 id="intro-heading">ABOUT ME</h1>
+        <p class="intro-summary"> 
             Hello! I am a recent Applied Computing Technology graduate from Colorado State University and eager to help the development of a company. 
             With the flexibility of the Applied Computing Technology major, I had the opportunity to continually challenge myself with Computer Science
             courses and projects involving distributed systems and web applications.  Throughout these courses and projects, I worked effectively in groups
@@ -24,19 +24,19 @@ export default Vue.extend({
 </script>
 
 <style lang="less" scoped>
-#about {
+#intro {
     max-width: 1140px;
     margin: auto;
     padding-bottom: 40px;
-    // transition: transform 0.6s ease-in-out;
+
 }
 
-#about-heading {
+#intro-heading {
     text-align: center;
     padding: 30px 20px 30px 20px;
 }
 
-.about-summary {
+.intro-summary {
     margin: auto;
     padding-bottom: 20px;
 }
