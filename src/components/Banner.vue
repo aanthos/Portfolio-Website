@@ -12,29 +12,13 @@
 
 		<Profile />
 
-    <a id="arrow-container" onclick="scrollToAbout(this)">
+    <a id="arrow-container" @click="scrollMeTo('intro')">
      	<v-icon id="arrow" name="angle-down" />
     </a>
   </div>
 </template>
 
 <script lang="ts">
-// import { Component, Prop, Vue } from 'vue-property-decorator';
-
-// export default class Home extends Vue {
-//   public show: boolean = false;
-
-//   // TODO: Fix smooth scroll
-// 	// public scrollToAbout(element: any) {
-// 	// 	const point = document.querySelector('#banner');
-// 	// 	if ( point ) {
-// 	// 		point.scrollIntoView({
-// 	// 			behavior: 'smooth',
-// 	// 		});
-// 	// 	}
-// 	// }
-// }
-
 import Vue from 'vue';
 
 import Profile from '@/components/Profile.vue';
@@ -48,36 +32,25 @@ export default Vue.extend({
 		};
 	},
 	mounted() {
-		
-	setTimeout(() => { this.loading = false; }, 500);
-
-	// 	const timer = () => {
-	// 		return setInterval(() => {
-	// 			this.remaining -= 1000
-	// 		}, 1000)
-	// 	};
-
-	// 	const ti = timer();
-	// 	setTimeout(() => {
-
-	// 	});
-	}
+	  setTimeout(() => { this.loading = false; }, 500);
+  },
+  methods: {
+    scrollMeTo(element: string) {
+      const target = document.getElementById(element);
+      if( target ) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  },
 });
 </script>
 
 
 <style lang="less" scoped>
-button {
-  margin-top: 50px;
-  position: absolute;
-}
-
 #banner {
     position: relative;
     overflow: hidden;
-    // height: calc(100vh - 20px);
     height: calc(100vh);
-
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -126,30 +99,10 @@ button {
     transition-duration: 0.3s; 
     color: #3d856f;
   }
-  // &:target ~ #about{
-  //   transform: translateY(0px);
-  // }
 }
 
 #arrow {
   width: 60px;
   height: 60px;
 }
-
-// @profile-container-width: 400px;
-// #profile-container {
-// 	width: @profile-container-width;
-// 	position: absolute;
-// 	color: white;
-// 	left: 50%;
-// 	margin-left: calc((@profile-container-width / 2) - @profile-container-width);
-// 	top: 50%;
-// 	margin-top: calc((@profile-container-width / 2) - @profile-container-width);
-// }
-
-// #profile-image {
-//   border: 2px solid #343a40;
-//   border-radius: 500px;
-// }
-
 </style>
