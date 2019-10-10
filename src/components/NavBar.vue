@@ -55,9 +55,10 @@ export default Vue.extend({
 
 <style lang="less" scoped>
 #navbar-transparent {
-  opacity: 0.5;
+  opacity: 0.75;
   width: 100%;
-  position: fixed;
+  position: absolute;
+  //position: fixed; if you want it to travel with the sidescroller
   top: 0;
   z-index: 1;
   a {
