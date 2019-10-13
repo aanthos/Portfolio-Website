@@ -35,12 +35,12 @@ export default Vue.extend({
 	  setTimeout(() => { this.loading = false; }, 500);
   },
   methods: {
-    scrollMeTo(element: string) {
-      const target = document.getElementById(element);
-      if( target ) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+	scrollMeTo(element: string) {
+		const target = document.getElementById(element);
+		if ( target ) {
+		target.scrollIntoView({ behavior: 'smooth' });
+		}
+	},
   },
 });
 </script>
