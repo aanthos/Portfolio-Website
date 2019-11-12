@@ -33,10 +33,10 @@ export default Vue.extend({
   data() {
 	return {
 		scrollPosition: 0,
-	};
+	  };
   },
   mounted() {
-	window.addEventListener('scroll', this.updateScroll);
+	  window.addEventListener('scroll', this.updateScroll);
   },
   methods: {
 	updateScroll() {

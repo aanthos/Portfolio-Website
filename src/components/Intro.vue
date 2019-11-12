@@ -1,6 +1,6 @@
 <template>
     <div id="intro">
-        <h1 id="intro-heading">ABOUT ME</h1>
+        <h1 id="intro-heading">ABOUT</h1>
         <p class="intro-summary"> 
             Hello! I am a recent Applied Computing Technology graduate from Colorado State University and eager to help the development of a company. 
             With the flexibility of the Applied Computing Technology major, I had the opportunity to continually challenge myself with Computer Science
