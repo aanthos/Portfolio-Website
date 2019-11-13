@@ -31,24 +31,24 @@
 import Vue from 'vue';
 export default Vue.extend({
   data() {
-    return {
-      scrollPosition: 0,
-    }
+	return {
+		scrollPosition: 0,
+	  };
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
+	  window.addEventListener('scroll', this.updateScroll);
   },
   methods: {
-    updateScroll() {
-      this.scrollPosition = window.scrollY;
-    },
+	updateScroll() {
+		this.scrollPosition = window.scrollY;
+	},
 
-    scrollMeTo(element: string) {
-      const target = document.getElementById(element);
-      if( target ) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+	scrollMeTo(element: string) {
+		const target = document.getElementById(element);
+		if ( target ) {
+		target.scrollIntoView({ behavior: 'smooth' });
+		}
+	},
   },
 });
 </script>
